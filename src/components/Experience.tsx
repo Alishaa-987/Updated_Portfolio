@@ -7,48 +7,35 @@ const experiences = [
     role: 'Section Leader — Code in Place',
     org: 'Stanford University',
     period: '2026',
-    type: 'Education / Leadership',
     points: [
-      'Competitively selected from thousands of global applicants as one of approximately 2,000 Section Leaders to teach Python through Stanford\'s worldwide free CS education initiative.',
-      'Facilitated weekly live coding sessions covering Python fundamentals — functions, loops, conditionals, and problem decomposition — for an international student cohort.',
-      'Provided 1-on-1 debugging support and mentorship across time zones, guiding students from zero programming experience through their first projects.',
-      'Developed curriculum-aligned exercises and feedback frameworks that supported student progress and course completion.',
+      'Selected from thousands of global applicants to teach Python in Stanford\'s free CS education initiative.',
+      'Facilitated weekly live coding sessions and 1-on-1 debugging support for international students.',
     ],
-    skills: ['Teaching', 'Python', 'Curriculum Design', 'Cross-cultural Communication'],
+    skills: ['Teaching', 'Python', 'Mentorship'],
   },
   {
     role: 'Trainer & Moderator',
     org: 'iCodeGuru',
     period: '2025 – Present',
-    type: 'Teaching / Community',
     points: [
-      'iCodeGuru trains Pakistani students for international tech careers and fully funded US scholarships. Moderates the community Slack workspace and supports students with technical queries.',
-      'Delivers structured DSA and Python training sessions, focusing on problem-solving patterns used in technical interviews and competitive programming.',
-      'Mentors students preparing for international coding competitions and scholarship applications, with a strong emphasis on algorithmic thinking.',
+      'Delivers DSA and Python training sessions for students preparing for tech interviews.',
+      'Moderates community Slack workspace and provides technical mentorship.',
     ],
-    skills: ['Data Structures & Algorithms', 'Python', 'Technical Mentorship', 'Community Management'],
+    skills: ['DSA', 'Python', 'Mentorship'],
   },
   {
     role: 'Open-Source Contributor',
-    org: 'GirlScript Summer of Code (GSSoC \'25)',
+    org: 'GirlScript Summer of Code',
     period: '2026',
-    type: 'Open Source',
-    points: [
-      'Competitively selected for GSSoC \'25 — one of the world\'s largest open-source programmes by GirlScript Foundation India.',
-      'Contributing code across open-source projects as part of a structured, mentored programme with real codebase responsibilities.',
-    ],
-    skills: ['Open Source', 'Git', 'Code Review', 'Collaborative Development'],
+    points: ['Selected for GSSoC \'25 — contributing to open-source projects with mentor guidance.'],
+    skills: ['Open Source', 'Git'],
   },
   {
-    role: 'MERN Stack & DSA Fellow',
-    org: 'Dev Weekends Fellowship',
+    role: 'MERN Stack Fellow',
+    org: 'Dev Weekends',
     period: '2025',
-    type: 'Fellowship',
-    points: [
-      'Completed an intensive fellowship programme covering production-level MERN stack development and Data Structures & Algorithms through structured weekend sessions.',
-      'Awarded Bronze Certificate for consistent performance, project delivery, and demonstrated problem-solving ability across all programme modules.',
-    ],
-    skills: ['MERN Stack', 'DSA', 'Project Delivery'],
+    points: ['Completed intensive fellowship covering MERN stack and DSA; earned Bronze Certificate.'],
+    skills: ['MERN', 'DSA'],
   },
 ];
 
@@ -56,45 +43,37 @@ export default function Experience() {
   const { ref, inView } = useInView();
 
   return (
-    <section id="experience" className="py-28 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="divider mb-28" />
+    <section id="experience" className="py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        <div className="divider mb-24" />
         <SectionHeading label="Experience" title="Where I've contributed" />
 
-        <div ref={ref} className="max-w-3xl space-y-4">
+        <div ref={ref} className="max-w-3xl space-y-3">
           {experiences.map((exp, i) => (
             <motion.div
               key={exp.org + exp.period}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 14 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.45, delay: i * 0.08 }}
-              className="card p-7"
+              transition={{ duration: 0.35, delay: i * 0.06 }}
+              className="card p-6"
             >
-              {/* Header */}
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                 <div>
-                  <p className="section-label mb-1">{exp.type}</p>
-                  <h3 className="text-base font-bold text-[#e2e2e2]">{exp.role}</h3>
-                  <p className="text-sm text-[#777] mt-0.5">{exp.org}</p>
+                  <p className="text-[10px] font-mono text-[#4A4A4A] mb-0.5">{exp.org}</p>
+                  <h3 className="text-sm font-bold text-[#D0D0D0]">{exp.role}</h3>
                 </div>
-                <span className="shrink-0 tag self-start">{exp.period}</span>
+                <span className="tag shrink-0 self-start">{exp.period}</span>
               </div>
-
-              {/* Bullets */}
-              <ul className="space-y-2.5 mb-5">
+              <ul className="space-y-2 mb-4">
                 {exp.points.map((pt, pi) => (
-                  <li key={pi} className="flex gap-3 text-sm text-[#777] leading-relaxed">
-                    <span className="mt-[9px] w-1 h-1 rounded-full bg-[#3d3d3d] shrink-0" />
+                  <li key={pi} className="flex gap-2.5 text-xs text-[#6B7065] leading-relaxed">
+                    <span className="mt-[7px] w-1 h-1 rounded-full bg-[#4A4A4A] shrink-0" />
                     {pt}
                   </li>
                 ))}
               </ul>
-
-              {/* Skills */}
-              <div className="flex flex-wrap gap-1.5 pt-4 border-t border-[#1f1f1f]">
-                {exp.skills.map((s) => (
-                  <span key={s} className="tag">{s}</span>
-                ))}
+              <div className="flex flex-wrap gap-1.5 pt-3 border-t border-[#4A4A4A]/35">
+                {exp.skills.map((s) => <span key={s} className="tag">{s}</span>)}
               </div>
             </motion.div>
           ))}
