@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Achievements from './components/Achievements';
 import Education from './components/Education';
+import Articles from './components/Articles';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -21,6 +22,7 @@ export default function App() {
         <Experience />
         <Achievements />
         <Education />
+        <Articles />
         <Contact />
       </main>
       <Footer />

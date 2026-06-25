@@ -88,7 +88,7 @@ export default function Hero() {
             Skilled at combining technical problem-solving, clean design, and product thinking to create practical,
             high-impact applications. Actively engaged in open-source collaboration and continuous learning, with a
             proven ability to adapt quickly, work effectively in team environments, and contribute to meaningful
-            projects — driven by a commitment to leveraging technology to deliver value and improve user experiences.
+            projects, driven by a commitment to leveraging technology to deliver value and improve user experiences.
           </p>
         </motion.div>
 
@@ -103,7 +103,7 @@ export default function Hero() {
           className="flex flex-wrap items-center gap-3"
         >
           <a href="#projects" className="btn-primary">View Projects</a>
-          <a href="/Resume copy.pdf" download className="btn-secondary"><Download size={12} /> Resume</a>
+          <a href="/Alisha_Fatima_Resume.pdf" download className="btn-secondary"><Download size={12} /> Resume</a>
 
           <div className="flex gap-1.5 ml-2">
             {[
