@@ -49,13 +49,13 @@ export default function About() {
             className="space-y-4 text-sm text-[#6B7065] leading-[1.9]"
           >
             <p>
-              <span className="text-[#D0D0D0] font-semibold">Alisha Fatima</span> is a Computer Science student at UAF (Class of 2027) and a full-stack web developer with production-deployed applications.
+              <span className="text-[#D0D0D0] font-semibold">Alisha Fatima</span> is a CS student at UAF (Class of 2027) with hands-on experience in software development and a passion for building innovative, user-focused digital products that solve real-world problems.
             </p>
             <p>
-              Selected as one of <span className="text-[#D0D0D0]">~2,000 Section Leaders globally</span> for Stanford's Code in Place 2026, teaching Python to students across multiple time zones.
+              Experienced in developing scalable applications using modern technologies — from full-stack web platforms to cross-platform mobile apps — with growing expertise in Generative AI and emerging software solutions.
             </p>
             <p>
-              Solved all <span className="text-[#D0D0D0]">9/9 puzzles at Harvard CS50 Puzzle Day</span> for two consecutive years (2024 & 2025). Qualified for Meta Hacker Cup Round 1 (2025). Currently training students in DSA and Python at iCodeGuru while exploring AI application development.
+              Selected as one of <span className="text-[#D0D0D0]">~2,000 Section Leaders globally</span> for Stanford Code in Place 2026. Two-time <span className="text-[#D0D0D0]">Harvard CS50 Puzzle Day 9/9 solver</span>. Meta Hacker Cup Round 1 qualifier. Active GSSoC '25 open-source contributor.
             </p>
 
             <div className="pt-4 border-t border-[#4A4A4A]/35">

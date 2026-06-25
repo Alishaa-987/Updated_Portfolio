@@ -72,16 +72,25 @@ export default function Hero() {
         </motion.div>
 
         {/* Bio */}
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.42 }}
-          className="text-sm text-[#6B7065]/90 leading-[1.85] max-w-2xl mb-8"
+          className="text-sm text-[#6B7065]/90 leading-[1.85] max-w-2xl mb-8 space-y-3"
         >
-          I build production web apps with Next.js and the MERN stack. Selected as a Stanford Code in Place
-          Section Leader from thousands of global applicants. Two-time Harvard CS50 Puzzle Day 9/9 solver.
-          Meta Hacker Cup Round 1 qualifier. Currently exploring AI application development with LangChain and Groq.
-        </motion.p>
+          <p>
+            A Computer Science student with hands-on experience in software development and a passion for building
+            innovative, user-focused digital products that solve real-world problems. Experienced in developing
+            scalable applications using modern technologies, with growing expertise in Generative AI and emerging
+            software solutions.
+          </p>
+          <p>
+            Skilled at combining technical problem-solving, clean design, and product thinking to create practical,
+            high-impact applications. Actively engaged in open-source collaboration and continuous learning, with a
+            proven ability to adapt quickly, work effectively in team environments, and contribute to meaningful
+            projects — driven by a commitment to leveraging technology to deliver value and improve user experiences.
+          </p>
+        </motion.div>
 
         {/* Second rule */}
         <div className="h-px bg-[#4A4A4A]/40 mb-8" />
