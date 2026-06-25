@@ -8,6 +8,7 @@ import { projects, type Project } from '../data/projects';
 const categories = [
   { id: 'all', label: 'All' },
   { id: 'fullstack', label: 'Full-Stack' },
+  { id: 'mobile', label: 'Mobile' },
   { id: 'ai', label: 'AI / Python' },
   { id: 'systems', label: 'Systems' },
 ] as const;
@@ -95,7 +96,7 @@ function ProjectCard({ project }: { project: Project }) {
 }
 
 export default function Projects() {
-  const [active, setActive] = useState<'all' | 'fullstack' | 'ai' | 'systems'>('all');
+  const [active, setActive] = useState<'all' | 'fullstack' | 'mobile' | 'ai' | 'systems'>('all');
   const { ref, inView } = useInView();
 
   const featured = projects.filter((p) => p.featured);

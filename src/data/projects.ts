@@ -8,7 +8,7 @@ export interface Project {
   live: string | null;
   language: string;
   tags: string[];
-  category: 'fullstack' | 'ai' | 'systems';
+  category: 'fullstack' | 'ai' | 'systems' | 'mobile';
   featured: boolean;
 }
 
@@ -64,6 +64,45 @@ export const projects: Project[] = [
     tags: ['MATLAB', 'App Designer', 'Image Processing', 'Edge Detection', 'Bilateral Filtering'],
     category: 'systems',
     featured: true,
+  },
+  {
+    id: 'habit-tracker',
+    name: 'Habit Tracking App',
+    problem: 'Maintaining consistent daily habits without visual progress tracking leads to motivation loss and eventual dropout from routines.',
+    solution: 'Built a cross-platform React Native app with habit creation, daily check-ins, streak tracking, and progress visualisation backed by AsyncStorage persistence.',
+    outcome: 'Fully functional mobile app with streak rewards and habit completion rings running on both iOS and Android via Expo.',
+    github: 'https://github.com/Alishaa-987/Habit-Tracker-App',
+    live: null,
+    language: 'React Native',
+    tags: ['React Native', 'Expo', 'AsyncStorage', 'JavaScript', 'Mobile'],
+    category: 'mobile',
+    featured: false,
+  },
+  {
+    id: 'medicore',
+    name: 'Medicore — Medication App',
+    problem: 'Patients managing multiple medications struggle to remember dosages, schedules, and refill dates without an organised reminder system.',
+    solution: 'Developed a React Native medication management app with pill schedules, dosage tracking, push notification reminders, and a health log for daily use.',
+    outcome: 'Functional cross-platform medication reminder app demonstrating push notifications, health-focused UX, and local storage on iOS and Android.',
+    github: 'https://github.com/Alishaa-987/Medicore',
+    live: null,
+    language: 'React Native',
+    tags: ['React Native', 'Expo', 'Push Notifications', 'AsyncStorage', 'JavaScript'],
+    category: 'mobile',
+    featured: false,
+  },
+  {
+    id: 'expense-tracker',
+    name: 'Expense Tracker App',
+    problem: 'Tracking personal spending across categories manually is error-prone and provides no actionable insight into financial patterns.',
+    solution: 'Built a React Native expense tracking app with transaction logging, category-based filtering, monthly summaries, and chart-based spending visualisations.',
+    outcome: 'Cross-platform financial tracking app with expense breakdowns and AsyncStorage-backed persistence running on iOS and Android via Expo.',
+    github: 'https://github.com/Alishaa-987/Expense-Tracker',
+    live: null,
+    language: 'React Native',
+    tags: ['React Native', 'Expo', 'AsyncStorage', 'Charts', 'JavaScript'],
+    category: 'mobile',
+    featured: false,
   },
   {
     id: 'hospital-mgmt',
