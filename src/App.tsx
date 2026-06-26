@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -9,23 +10,39 @@ import Achievements from './components/Achievements';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ProjectsPage from './pages/ProjectsPage';
+import ArticlesPage from './pages/ArticlesPage';
+
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Articles />
+      <Experience />
+      <Achievements />
+      <Education />
+      <Contact />
+    </>
+  );
+}
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#111111] text-[#e2e2e2]">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Articles />
-        <Experience />
-        <Achievements />
-        <Education />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen bg-[#111111] text-[#e2e2e2]">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/articles" element={<ArticlesPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
