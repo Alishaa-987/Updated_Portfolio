@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 const links = [
   { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Articles', href: '#articles' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -44,7 +45,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="/Resume copy.pdf" download className="hidden md:inline-flex btn-primary text-xs">
+        <a href="/Alisha_Fatima_Resume.pdf" download className="hidden md:inline-flex btn-primary text-xs">
           Resume
         </a>
 
@@ -70,7 +71,7 @@ export default function Navbar() {
                 </li>
               ))}
               <li className="pt-2">
-                <a href="/Resume copy.pdf" download className="btn-primary w-full justify-center text-xs">Resume</a>
+                <a href="/Alisha_Fatima_Resume.pdf" download className="btn-primary w-full justify-center text-xs">Resume</a>
               </li>
             </ul>
           </motion.div>

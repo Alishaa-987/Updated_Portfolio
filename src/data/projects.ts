@@ -13,7 +13,7 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // ── Featured ──────────────────────────────────────────────────────────────
+  // Featured
   {
     id: 'school-mgmt',
     name: 'School Hub',
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     id: 'artistic-image-studio',
     name: 'Artistic Image Studio',
     problem: 'Applying artistic filters to photographs requires specialist software and technical knowledge inaccessible to most users.',
-    solution: 'Built a MATLAB App Designer application with 5 NPR filters — Pencil Sketch, Ink Outline, Oil Painting, Charcoal Sketch, and Pop Art — using core DIP algorithms.',
+    solution: 'Built a MATLAB App Designer application with 5 NPR filters: Pencil Sketch, Ink Outline, Oil Painting, Charcoal Sketch, and Pop Art using core DIP algorithms.',
     outcome: 'Functional interactive GUI for real-time artistic transformation using Canny edge detection, bilateral filtering, and colour quantisation.',
     github: 'https://github.com/Alishaa-987/Artistic_Image_Studio',
     live: null,
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     featured: true,
   },
 
-  // ── Other ─────────────────────────────────────────────────────────────────
+  // Other
   {
     id: 'campus-connect',
     name: 'Campus Connect',
@@ -97,14 +97,14 @@ export const projects: Project[] = [
   {
     id: 'medisync',
     name: 'mediSync',
-    problem: 'Patients managing chronic conditions need a simple way to track medications, sync health records, and share data with healthcare providers.',
-    solution: 'Built a health-tech app for medication scheduling, health log tracking, and provider-shareable health summaries with real-time sync.',
-    outcome: 'Cross-platform health management app demonstrating domain-sensitive UX, push notifications, and structured health data handling.',
-    github: 'https://github.com/Alishaa-987/mediSync',
+    problem: 'Healthcare facilities need a centralised system for patient records, appointment scheduling, and medication tracking across multiple user roles.',
+    solution: 'Built a full-stack hospital and medication management platform covering patient records, appointment scheduling, dosage tracking, and an admin dashboard.',
+    outcome: 'Functional multi-role health management system demonstrating healthcare domain modelling and TypeScript-first full-stack development.',
+    github: 'https://github.com/Alishaa-987/Hospital_Managment_System_Webiste',
     live: null,
-    language: 'React Native',
-    tags: ['React Native', 'Expo', 'AsyncStorage', 'Push Notifications', 'JavaScript'],
-    category: 'mobile',
+    language: 'TypeScript',
+    tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
+    category: 'fullstack',
     featured: false,
   },
   {
@@ -147,22 +147,9 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 'hospital-mgmt',
-    name: 'Hospital Management System',
-    problem: 'Healthcare facilities need a centralised system for patient records and appointment scheduling across multiple user roles.',
-    solution: 'Built a hospital management platform covering patient records, appointment scheduling, and an admin dashboard using Next.js and TypeScript.',
-    outcome: 'Functional multi-role management system demonstrating healthcare domain modelling and TypeScript-first development.',
-    github: 'https://github.com/Alishaa-987/Hospital_Managment_System_Webiste',
-    live: null,
-    language: 'TypeScript',
-    tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
-    category: 'fullstack',
-    featured: false,
-  },
-  {
     id: 'webmind-hackathon',
     name: 'IntelliSense AI',
-    problem: 'Brands lack visibility into how generative AI models represent them — a critical blind spot as AI replaces traditional search.',
+    problem: 'Brands lack visibility into how generative AI models represent them, a critical blind spot as AI replaces traditional search.',
     solution: 'Built an AI analytics dashboard measuring brand visibility across generative AI models in 48 hours at the WebMind Innovation Hackathon.',
     outcome: 'Functional prototype delivered under competition conditions. Demonstrates rapid full-stack development and AI product thinking.',
     github: 'https://github.com/Alishaa-987/WebMind-Innovation-Hackathon-Track-1',
